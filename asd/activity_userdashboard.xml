@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activity.userdashboard"
+    android:orientation="vertical"
+    android:background="@drawable/bg2">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:id="@+id/logo"
+        android:background="@drawable/logo">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:text="DASHBOARD"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="35dp"
+        android:textStyle="bold"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/informationimg"
+                android:paddingLeft="30dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/information"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:id="@+id/informationtxt"
+                android:textSize="30sp"
+                android:textColor="#000000"
+                android:text="Information"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/appointmentimg"
+                android:paddingLeft="20dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/appointment"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/appointmenttxt"
+                android:textSize="30sp"
+                android:textColor="#000000"
+                android:text="Make an appointment"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/signoutbtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:text="Log out"
+        android:textColor="#000000"
+        android:textStyle="bold">
+
+    </Button>
+        </LinearLayout>

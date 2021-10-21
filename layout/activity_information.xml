@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activity.userdashboard"
+    android:orientation="vertical"
+    android:background="@drawable/bg2">
+
+
+    <ImageView
+        android:id="@+id/petimage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="selectImage"
+        android:src="@drawable/profile"
+        tools:ignore="OnClick" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_petname"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_pet_name"
+            android:textColor="#000"
+            android:hint="Enter Pet Name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="INFORMATION"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_username"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_user_name"
+            android:textColor="#000"
+            android:hint="Enter User Name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_pettype"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_pet_type"
+            android:textColor="#000"
+            android:hint="Enter Pet Type"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_agepet"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_age_pet"
+            android:textColor="#000"
+            android:hint="Enter Pet Age"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/addpet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="addpet"
+        android:padding="10dp"
+        android:text="Add pet"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/updateinfobtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:text="Update the Informatıon"
+        android:textColor="#000" />
+    <TextView
+        android:id="@+id/showinfo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#000"
+        android:textSize="17dp"
+        android:text="Pet's information:"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp">
+
+    </TextView>
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+</LinearLayout>

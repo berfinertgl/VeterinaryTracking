@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activity.VaccineSchedule"
+    android:orientation="vertical"
+    android:background="@drawable/bg2">
+
+    <EditText
+        android:id="@+id/petname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="100dp"
+        android:enabled="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:text="Vaccine Type"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_layout_vaccinetype"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_vaccinetype"
+            android:textColor="#000"
+            android:hint="Enter Vaccine Type"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <Button
+            android:id="@+id/selectDate"
+            android:layout_margin="10dp"
+            android:layout_centerInParent="true"
+            android:text="Select a date"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/dateTxt"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/selectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show the date "/>
+        <Button
+            android:id="@+id/selectTime"
+            android:layout_margin="10dp"
+            android:layout_centerInParent="true"
+            android:text="Select a tıme"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/timetxt"
+            android:layout_marginTop="10dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/selectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show the time "/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="right"
+        android:text="Update the Informatıon"
+        android:textColor="#000"
+        android:id="@+id/updateinfobtn"/>
+
+
+</LinearLayout>
